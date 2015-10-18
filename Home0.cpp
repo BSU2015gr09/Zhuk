@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>  //Программа переворачивает число.
 using std::cout;
 using std::cin;
 int main()
