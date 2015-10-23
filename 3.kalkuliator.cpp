@@ -6,7 +6,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int b=0,n=1;
-	float rez=0, a=0;
+	float rez=0;
 	char oper, c, e;
 	while (n == 1)
 	{
