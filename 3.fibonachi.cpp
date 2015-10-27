@@ -7,7 +7,7 @@ using std::endl;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	float mas[40], a, b;
+	float mas[40], a, b;//зачем массив?
 	int n;
 	cout << "                                  Отношение                             " << endl;
 	cout << "         Последующее к предыдущему    |    Предыдущее к последующему    " << endl;
