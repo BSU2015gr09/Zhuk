@@ -8,7 +8,7 @@ int main()
 {
 	int a = 4096, c = 150889, m = 714025;
 	int i = 0;
-	int mas[15];
+	int mas[15];// а массив то зачем?
 	mas[0]=1;
 	cout << "1  = " << mas[0] << endl;
 	for (i = 1; i<15; i++)
