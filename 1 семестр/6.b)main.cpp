@@ -16,7 +16,7 @@ void initialization(int mas[], int N)
 	}
 }
 
-void print(int mas[], int N, int n)// не понял что такое n
+void print(int mas[], int N, int n)
 {
 	cout <<endl << "Печеть массива" << endl;
 	for (int i = 0; i < N-n; i++)
@@ -26,7 +26,7 @@ void print(int mas[], int N, int n)// не понял что такое n
 	cout << endl << endl;
 }
 
-void remove(int mas[], int N, int &n)// не понял что такое n
+void remove(int mas[], int N, int &n)
 {
 	int i;
 	cout << "Введите номер элемента от 0 до " <<N-1-n<< " который хотите удалить" << endl;
@@ -38,7 +38,7 @@ void remove(int mas[], int N, int &n)// не понял что такое n
 		{
 			mas[i] = mas[i + 1];
 		}
-		n++;// не понял 
+		n++;
 	}
 }
 

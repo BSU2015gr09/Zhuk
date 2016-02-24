@@ -1,7 +1,6 @@
 ﻿/*В программе объявлен массив А элементов типа char (размер массива 20).
 Пользователь вводит массив c клавиатуры.
-Затем ищем в массиве какая буква встречается чаще всего. Ее выводим на экран. */
-
+Затем заменяем последнюю встреченную в массиве букву Z на букву F.*/
 
 #include <iostream>
 using std::cin;
@@ -20,30 +19,25 @@ void initialization(char mas[], int N)
 void print(char mas[], int N)
 {
 	cout << endl << "Печеть массива" << endl;
-	for (int i = 0; i < N ; i++)
+	for (int i = 0; i < N; i++)
 	{
 		cout << mas[i] << " ";
 	}
 	cout << endl << endl;
 }
 
-void letter(char mas[], int N)
+void poisk_Z(char mas[], char N)
 {
-	int k = 0, n = 0, b = 0, i = 0;
-	char a = mas[i], let = mas[i];
-	while (k < N)
+	cout << "Поиск и замена последней буквы Z на букву F" << endl;
+	for (int i = N - 1; i >= 0; i--)
 	{
-		a = mas[i];
-		for ( int i = k; i < N; i++)
+		if (mas[i] == 'Z')
 		{
-			if (a == mas[i]) n++;
+			mas[i] = 'F';
+			break;
 		}
-		i++;
-		k++;
-		if (b <= n) { b = n; let = a; }
-		n = 0;
+		if (i == 0 && mas[0] != 'Z') cout << "В массиве нету буквы Z" << endl;
 	}
-	cout <<"Элемент который встречается наибольшее количество раз   "<< let <<endl<<endl;
 }
 
 int main()
@@ -53,6 +47,7 @@ int main()
 	char mas[N];
 	initialization(mas, N);//Инициализация (ручная)
 	print(mas, N);//Печать массива
-	letter(mas, N);//Функция ищет какая буква встречается в массиве чаще всего и выводит её на экран
+	poisk_Z(mas, N);//Заменяет последнюю встреченную в массиве букву Z на F
+	print(mas, N);
 	return 0;
 }

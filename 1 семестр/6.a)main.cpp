@@ -10,14 +10,14 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void initialization(int mas[], int N, int &element, int &i)//зачем такая ф-ция нужна вообще не понял
+void initialization(int mas[], int N, int &element, int &i)
 {
 	cout << "Введите элемент  ";
 	cin >> element;
 	mas[i] = element;
 }
 
-void push(int mas[], int N, int &i,int element)//получим ошибку если попытаемся push элементов 100. Вы не проверяете переполнения!!!!
+void push(int mas[], int N, int &i,int element)
 {
 	mas[i] = element;
 	i++;
